@@ -91,9 +91,11 @@ Exploratory Data Analysis
 Exercise 1:
 We are interested in highway miles per gallon, or the hwy variable. Create a histogram of this variable. Describe what you see/learn.
 ```{r}
+
+
 library(ggplot2)
 data(mpg)
-View(mpg)
+
 ```
 
 
