@@ -1,9 +1,9 @@
 ---
 title: "Hw1"
 output:
-  html_document: default
-  word_document: default
   pdf_document: default
+  word_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -126,9 +126,13 @@ Make a bar plot of manufacturer. Flip it so that the manufacturers are on the y-
 Dodge produced the most cars and Lincoln produced the least.
 ```{r}
 library(tidyverse)
-ggplot(mpg, aes(x=factor(manufacturer)))+
+ggplot(mpg, aes(x=fct_rev(fct_infreq(manufacturer))))+
   geom_bar(stat="count", width=0.9, fill="steelblue")+
   theme_minimal()+ coord_flip()
+
+
+
+
 ```
 
 
