@@ -1,8 +1,9 @@
 ---
 title: "Hw1"
 output:
-  html_document: default
+  pdf_document: default
   word_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -91,8 +92,7 @@ Exploratory Data Analysis
 Exercise 1:
 We are interested in highway miles per gallon, or the hwy variable. Create a histogram of this variable. Describe what you see/learn.
 ```{r}
-
-
+library(tinytex)
 library(ggplot2)
 data(mpg)
 
